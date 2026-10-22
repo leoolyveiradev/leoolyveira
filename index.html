@@ -1,0 +1,482 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Leo Oliveira | Desenvolvimento de software e experiências digitais</title>
+
+  <meta name="description"
+    content="Portfólio de Leo Oliveira, estudante de Licenciatura em Informática e desenvolvedor em formação. Sites, aplicações, jogos e interfaces construídos com cuidado.">
+
+  <meta name="theme-color" content="#070908">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Leo Oliveira | Portfólio">
+  <meta property="og:description"
+    content="Sites, aplicações, jogos e interfaces. A jornada de um desenvolvedor em formação.">
+
+  <link rel="icon" type="image/svg+xml" href="imgs/logoLeoolyveira.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Caveat:wght@600&family=Manrope:wght@400;500;600&display=swap">
+
+  <link rel="preload" as="image" href="imgs/bannerLeoolyveira.svg" fetchpriority="high">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ================= NAVEGAÇÃO ================= -->
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+
+      <a class="brand" href="#inicio" aria-label="Leo Oliveira, voltar ao início">
+        <img src="imgs/logoLeoolyveira.svg" alt="" width="160" height="48">
+      </a>
+
+      <nav class="nav" id="menu-principal" aria-label="Navegação principal" data-nav>
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#inicio" data-nav-link>Início</a></li>
+          <li><a class="nav__link" href="#habilidades" data-nav-link>Habilidades</a></li>
+          <li><a class="nav__link" href="#projetos" data-nav-link>Projetos</a></li>
+          <li><a class="nav__link" href="#sobre" data-nav-link>Sobre</a></li>
+          <li><a class="nav__link" href="#contato" data-nav-link>Contato</a></li>
+        </ul>
+
+        <ul class="social social--nav" aria-label="Redes sociais">
+          <li>
+            <a class="social__link" href="https://github.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub (abre em nova aba)">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .5A11.5 11.5 0 0 0 8.36 22.9c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.7 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z" />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a class="social__link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn (abre em nova aba)">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z" />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a class="social__link" href="https://www.instagram.com/leoolyveira.dev" target="_blank"
+              rel="noopener noreferrer" aria-label="Instagram (abre em nova aba)">
+              <svg class="icon-stroke" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle class="icon-dot" cx="17.4" cy="6.6" r="1.1" />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a class="social__link" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="TikTok (abre em nova aba)">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12.53.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07Z" />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a class="social__link" href="mailto:leoolyveiradev@gmail.com" aria-label="Enviar e-mail">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm1 2.4V17h16V7.4l-8 5.6-8-5.6ZM18.3 7H5.7L12 11.4 18.3 7Z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal"
+        data-menu-toggle>
+        <span class="menu-toggle__label">Menu</span>
+        <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo" data-section>
+      <figure class="hero__media" data-parallax>
+        <img class="hero__photo" src="imgs/bannerLeoolyveira.svg"
+          alt="Leo Oliveira de braços cruzados, vestindo roupa preta, em um ambiente tecnológico iluminado em verde"
+          width="1600" height="2000" fetchpriority="high" decoding="async">
+      </figure>
+
+      <div class="hero__inner">
+        <div class="hero__lead">
+          <h1 class="hero__title" id="hero-titulo">
+            <span class="line"><span>Ideias</span></span>
+            <span class="line"><span>que ganham</span></span>
+            <span class="line"><span class="accent">forma</span></span>
+          </h1>
+
+          <p class="hero__text">
+            Gosto de pegar uma ideia ainda solta e transformá-la em algo que dá para usar, tocar e explorar.
+            Cada projeto aqui é um passo nesse caminho.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projetos">
+              <span>Ver projetos</span>
+              <svg class="btn__icon" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M10 3v12m0 0-5-5m5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a class="btn btn--ghost" href="#sobre">Sobre mim</a>
+          </div>
+        </div>
+
+        <blockquote class="hero__quote">
+          <p>
+            <span class="q1">Mais que um portfólio,</span>
+            <span class="q2">é o reflexo<br> da minha jornada</span>
+            <span class="q3">como desenvolvedor.</span>
+          </p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ================= PROJETOS ================= -->
+    <section class="section projects" id="projetos" aria-labelledby="projects-titulo" data-section>
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Projetos</p>
+          <h2 class="section-title" id="projects-titulo">
+            O que estou <em>construindo</em>
+          </h2>
+        </header>
+
+        <div class="card-stack" data-card-stack>
+          <div class="card-stack__stage" data-card-stage tabindex="0"
+            aria-label="Carrossel de projetos. Use as setas esquerda e direita para navegar."
+            aria-roledescription="carrossel">
+
+            <div class="card-stack__cards" data-card-list aria-live="polite">
+
+              <!-- PROJETO 01 -->
+              <article class="stack-card" data-project-card data-index="0">
+                <div class="stack-card__visual stack-card__visual--codenglish">
+                  <img class="stack-card__image" src="imgs/projetos/Imagem Ilustrativa.png"
+                    alt="Prévia visual do Projeto 01" loading="lazy" decoding="async">
+                  <span class="stack-card__number">01 / 08</span>
+                  <span class="stack-card__word"></span>
+                  <span class="stack-card__category">Loja virtual</span>
+                </div>
+                <div class="stack-card__body">
+                  <h3>Projeto 01</h3>
+                  <a class="stack-card__link" href="https://github.com/" target="_blank"
+                    rel="noopener noreferrer">
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- PROJETO 02 -->
+              <article class="stack-card" data-project-card data-index="1">
+                <div class="stack-card__visual stack-card__visual--nuckleo">
+                  <img class="stack-card__image" src="imgs/projetos/Imagem Ilustrativa.png"
+                    alt="Prévia visual do Projeto 02" loading="lazy" decoding="async">
+                  <span class="stack-card__number">02 / 08</span>
+                  <span class="stack-card__word"></span>
+                  <span class="stack-card__category">Página institucional</span>
+                </div>
+                <div class="stack-card__body">
+                  <h3>Projeto 02</h3>
+                  <a class="stack-card__link" href="https://github.com/" target="_blank"
+                    rel="noopener noreferrer">
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- PROJETO 03 -->
+              <article class="stack-card" data-project-card data-index="2">
+                <div class="stack-card__visual stack-card__visual--bee">
+                  <img class="stack-card__image" src="imgs/projetos/Imagem Ilustrativa.png"
+                    alt="Prévia visual do Projeto 03" loading="lazy" decoding="async">
+                  <span class="stack-card__number">03 / 08</span>
+                  <span class="stack-card__word"></span>
+                  <span class="stack-card__category">Finanças empresariais</span>
+                </div>
+                <div class="stack-card__body">
+                  <h3>Projeto 03</h3>
+                  <a class="stack-card__link" href="https://github.com/" target="_blank"
+                    rel="noopener noreferrer">
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- PROJETO 04 -->
+              <article class="stack-card" data-project-card data-index="3">
+                <div class="stack-card__visual stack-card__visual--bee">
+                  <img class="stack-card__image" src="imgs/projetos/Imagem Ilustrativa.png"
+                    alt="Prévia visual do Nexora Workspace" loading="lazy" decoding="async">
+                  <span class="stack-card__number">04 / 08</span>
+                  <span class="stack-card__word"></span>
+                  <span class="stack-card__category">Gestão de equipes e tarefas</span>
+                </div>
+                <div class="stack-card__body">
+                  <h3>Projeto 4</h3>
+                  <a class="stack-card__link" href="#contato">
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- PROJETO 05 -->
+              <article class="stack-card" data-project-card data-index="4">
+                <div class="stack-card__visual stack-card__visual--bee">
+                  <img class="stack-card__image" src="imgs/projetos/Imagem Ilustrativa.png"
+                    alt="Prévia visual do Vitra Money" loading="lazy" decoding="async">
+                  <span class="stack-card__number">05 / 08</span>
+                  <span class="stack-card__word"></span>
+                  <span class="stack-card__category">Organização financeira pessoal</span>
+                </div>
+                <div class="stack-card__body">
+                  <h3>Projeto 5</h3>
+                  <a class="stack-card__link" href="#contato">
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- PROJETO 06 -->
+              <article class="stack-card" data-project-card data-index="5">
+                <div class="stack-card__visual stack-card__visual--bee">
+                  <img class="stack-card__image" src="imgs/projetos/Imagem Ilustrativa.png"
+                    alt="Prévia visual do Aurora Learn" loading="lazy" decoding="async">
+                  <span class="stack-card__number">06 / 08</span>
+                  <span class="stack-card__word"></span>
+                  <span class="stack-card__category">Aprendizado digital interativo</span>
+                </div>
+                <div class="stack-card__body">
+                  <h3>Projeto 6</h3>
+                  <a class="stack-card__link" href="#contato">
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- PROJETO 07 -->
+              <article class="stack-card" data-project-card data-index="6">
+                <div class="stack-card__visual stack-card__visual--bee">
+                  <img class="stack-card__image" src="imgs/projetos/Imagem Ilustrativa.png"
+                    alt="Prévia visual do Verdant Monitor" loading="lazy" decoding="async">
+                  <span class="stack-card__number">07 / 08</span>
+                  <span class="stack-card__word"></span>
+                  <span class="stack-card__category">Monitoramento ambiental</span>
+                </div>
+                <div class="stack-card__body">
+                  <h3>Projeto 7</h3>
+                  <a class="stack-card__link" href="#contato">
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- PROJETO 08 -->
+              <article class="stack-card" data-project-card data-index="7">
+                <div class="stack-card__visual stack-card__visual--bee">
+                  <img class="stack-card__image" src="imgs/projetos/Imagem Ilustrativa.png"
+                    alt="Prévia visual do Nomad Routes" loading="lazy" decoding="async">
+                  <span class="stack-card__number">08 / 08</span>
+                  <span class="stack-card__word"></span>
+                  <span class="stack-card__category">Planejamento de viagens</span>
+                </div>
+                <div class="stack-card__body">
+                  <h3>Projeto 8</h3>
+                  <a class="stack-card__link" href="#contato">
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <div class="card-stack__controls">
+            <button class="card-stack__arrow" type="button" data-card-prev aria-label="Projeto anterior">
+              <span aria-hidden="true">←</span>
+            </button>
+
+            <div class="card-stack__dots" data-card-dots aria-label="Selecionar projeto"></div>
+
+            <button class="card-stack__arrow" type="button" data-card-next aria-label="Próximo projeto">
+              <span aria-hidden="true">→</span>
+            </button>
+
+            <span class="card-stack__counter" data-card-counter>01 / 08</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HABILIDADES ================= -->
+    <section class="section skills" id="habilidades" aria-labelledby="skills-titulo" data-section>
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Habilidades</p>
+          <h2 class="section-title" id="skills-titulo">
+            Ferramentas que uso<br>e continuo <em>estudando</em>.
+          </h2>
+        </header>
+
+        <div class="tech-marquee" aria-label="Tecnologias utilizadas e estudadas por Leo Oliveira">
+          <div class="tech-marquee__track">
+            <ul class="tech-marquee__group" aria-label="Tecnologias">
+              <li class="tech-marquee__item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                  alt="HTML5" width="44" height="44" loading="lazy" decoding="async">
+              </li>
+              <li class="tech-marquee__item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                  alt="CSS3" width="44" height="44" loading="lazy" decoding="async">
+              </li>
+              <li class="tech-marquee__item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                  alt="JavaScript" width="44" height="44" loading="lazy" decoding="async">
+              </li>
+              <li class="tech-marquee__item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                  alt="Python" width="44" height="44" loading="lazy" decoding="async">
+              </li>
+            </ul>
+
+            <ul class="tech-marquee__group" aria-hidden="true">
+              <li class="tech-marquee__item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                  alt="" width="44" height="44" loading="lazy" decoding="async">
+              </li>
+              <li class="tech-marquee__item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                  alt="" width="44" height="44" loading="lazy" decoding="async">
+              </li>
+              <li class="tech-marquee__item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                  alt="" width="44" height="44" loading="lazy" decoding="async">
+              </li>
+              <li class="tech-marquee__item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                  alt="" width="44" height="44" loading="lazy" decoding="async">
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="interests reveal">
+          <p class="interests__label">Áreas que me interessam</p>
+          <ul class="interests__list">
+            <li>Desenvolvimento web</li>
+            <li>Aplicações</li>
+            <li>Jogos</li>
+            <li>Design de interfaces</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SOBRE ================= -->
+    <section class="section about" id="sobre" aria-labelledby="about-titulo" data-section>
+      <div class="container about__grid">
+        <figure class="about__figure reveal">
+          <div class="about__photo">
+            <img src="imgs/bannerLeoolyveira.svg" alt="Retrato de Leo Oliveira"
+              width="1600" height="2000" loading="lazy" decoding="async">
+          </div>
+          <figcaption></figcaption>
+        </figure>
+
+        <div class="about__content">
+          <header class="section-head reveal">
+            <p class="eyebrow">Sobre mim</p>
+            <h2 class="section-title" id="about-titulo">
+              Aprendendo em<br>público, <em>projeto</em><br>por projeto.
+            </h2>
+          </header>
+
+          <div class="about__text reveal">
+            <p>
+              Sou Leonardo Oliveira, estudante de Licenciatura em Informática.
+              Atualmente estou consolidando minha carreira como desenvolvedor full stack.
+            </p>
+            <p>
+              Comecei pela curiosidade de entender como as coisas funcionam por trás da tela, e hoje meu interesse
+              está em criar: sites, aplicações e interfaces que façam sentido para quem usa.
+            </p>
+            <p>
+              Ainda estou construindo minha experiência prática, e é justamente por isso que este espaço existe:
+              para registrar o que aprendo e mostrar a evolução de cada trabalho.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTATO ================= -->
+    <section class="section contact" id="contato" aria-labelledby="contact-titulo" data-section>
+      <div class="container">
+        <p class="eyebrow reveal">Contato</p>
+
+        <h2 class="contact__title reveal" id="contact-titulo">
+          Vamos criar<br>algo <span class="contact__script">juntos?</span>
+        </h2>
+
+        <p class="contact__text reveal">
+          Estou aberto a conversar sobre projetos, colaborações, estudos e oportunidades.
+        </p>
+
+        <a class="contact__mail reveal" href="mailto:leoolyveiradev@gmail.com">
+          <span class="contact__mail-label">Escreva para</span>
+          <span class="contact__mail-address">leoolyveiradev@gmail.com</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= RODAPÉ ================= -->
+  <footer class="site-footer">
+    <p class="footer-phrase">
+      Tecnologia para transformar ideias em possibilidades.
+    </p>
+
+    <a class="footer-brand" href="#inicio" aria-label="Voltar ao início">
+      <img src="imgs/logoLeoolyveira.svg" alt="Logo Leoolyveira" width="180" height="48">
+    </a>
+
+    <p class="footer-copyright">
+      © 2026 Leo Oliveira. Todos os direitos reservados.
+    </p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
